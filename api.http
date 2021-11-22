@@ -1,0 +1,63 @@
+###Get recipe
+
+http://localhost:7071/api/recipe/1
+
+###getRecipes
+http://localhost:7071/api/recipes
+
+###Post 
+
+POST http://localhost:7071/api/recipe
+
+{
+  "id": "3",
+  "name": "Sandwich",
+  "indredients": [
+    {
+    "name": "Bread",
+    "amount": "2 Slices"
+    },
+    {
+    "name": "Ham",
+    "amount": "2 - 4 Slices"
+    },
+    {
+    "name": "Butter",
+    "amount": "A small amount"
+    }
+  ],
+  "steps": [
+    "Spread butter on one side of each slice of bread with a knife",
+    "Layer ham on top of the butter on on of the slices of bread",
+    "Place the other slice of bread on top, butter side on the ham",
+    "Serve"
+  ]
+}
+
+###Update Recipe
+PUT http://localhost:7071/api/recipe 
+
+{
+  "id": "2",
+  "name": "Sandwich",
+  "indredients": [
+    {
+    "name": "Bread",
+    "amount": "2 Slices"
+    },
+    {
+    "name": "Ham",
+    "amount": "2 - 4 Slices"
+    },
+    {
+    "name": "Butter",
+    "amount": "A small amount"
+    }
+  ],
+  "steps": [
+    "Spread butter on one side of each slice of bread with a knife",
+    "Layer ham on top of the butter on on of the slices of bread",
+    "Place the other slice of bread on top, butter side on the ham",
+    "Serve"
+  ]
+}

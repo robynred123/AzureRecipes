@@ -1,0 +1,29 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ],
+      "route": "recipes"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "in",
+      "name": "inputRecipe",
+      "databaseName": "asccosmosdbdatabase",
+      "collectionName": "Documents",
+      "connectionStringSetting": "CONNECTION_STRING",
+      "partitionKey": "id"
+    }
+  ],
+  "scriptFile": "../dist/GetRecipes/index.js"
+}
