@@ -8,6 +8,7 @@ http://localhost:7071/api/recipes
 ###Post 
 
 POST http://localhost:7071/api/recipe
+Content-Type: application/json
 
 {
   "id": "3",

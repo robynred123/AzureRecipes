@@ -14,6 +14,25 @@
       "type": "http",
       "direction": "out",
       "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "outputRecipe",
+      "databaseName": "asccosmosdbdatabase",
+      "collectionName": "asccosmosdbcontainer",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CONNECTION_STRING",
+      "partitionKey": "id"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "in",
+      "name": "inputRecipe",
+      "databaseName": "asccosmosdbdatabase",
+      "collectionName": "asccosmosdbcontainer",
+      "connectionStringSetting": "CONNECTION_STRING",
+      "partitionKey": "id"
     }
   ],
   "scriptFile": "../dist/PostRecipe/index.js"
