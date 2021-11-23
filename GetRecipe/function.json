@@ -20,7 +20,7 @@
       "direction": "in",
       "name": "inputRecipe",
       "databaseName": "asccosmosdbdatabase",
-      "collectionName": "recipecontainer",
+      "collectionName": "asccosmosdbcontainer",
       "connectionStringSetting": "CONNECTION_STRING",
       "id": "{id}",
       "partitionKey": "{id}"

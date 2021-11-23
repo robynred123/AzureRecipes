@@ -1,9 +1,9 @@
 import { AzureFunction, Context, HttpRequest } from "@azure/functions"
 
-const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest, inputRecipe): Promise<void> {
+const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
     
-    console.log(inputRecipe)
-    const loadedProduct = inputRecipe;
+    console.log(context.bindings)
+    const loadedProduct = context.bindings.inputRecipe;
     
     context.res = {
         //status: 200, /* Defaults to 200 */
